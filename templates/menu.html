@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      {% load static%}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
+    <title>Menu</title>
+    <script src="https://kit.fontawesome.com/9006e11a27.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="menu-header">
+      <div class="menu-header-container">
+        <div class="order-type-bar">
+          <a href="/order-type"><h3>order type</h3></a>
+        </div>
+        <div class="menu-bar">
+          <a href="/menu"><h3>menu</h3></a>
+        </div>
+        <div class="payment-bar">
+          <a class="payment-bar-btn"><h3>payment</h3></a>
+        </div>
+      </div>
+    </div>
+    <div class="menu-main">
+      <div class="menu-title-container">
+        <div class="menu-title">
+          <h1>menu</h1>
+        </div>
+      </div>
+      <div class="recommend">
+        <div class="recommend-container">
+          <img class="recommend-img" src="../static/images/Hamburger.jpg" alt="">
+        </div>
+      </div>
+      <div class="menu-wrapper">
+        <div class="menu-container">
+          <div class="beverage">
+            <div class="food-title">
+              <h3>food</h3>
+            </div>
+            <div class="food-list">
+              <div class="food-article">
+                <div class="food-img-banner">
+                  <img class="menu-img" src="../static/images/Buffalo Wings.jpg" alt="">
+                </div>
+                <div class="food-detail">
+                  <p>Bufffalo Wings</p>
+                  <p>(8 pieces)</p>
+                  <p>$6.00(plus tax)</p>
+                </div>
+                <div class="select-container">
+                  <button data-name="Buffalo Wings" data-details="(8 pieces)" data-price=6.00 class="select-btn" type="button">Select</button>
+                </div>
+              </div>
+              <div class="food-article">
+                <div class="food-img-banner">
+                  <img class="menu-img" src="../static/images/Value Set.jpg" alt="">
+                </div>
+                <div class="food-detail">
+                  <p>Value Set</p>
+                  <p>(Hamburger, Frenchfries, Drink)</p>
+                  <p>$8.00(plus tax)</p>
+                </div>
+                <div class="select-container">
+                  <button data-name="Value Set" data-details="(Hamburger + Frenchfries + Drink)" data-price=8.00 class="select-btn" type="button">Select</button>
+                </div>
+              </div>
+              <div class="food-article">
+                <div class="food-img-banner">
+                  <img class="menu-img" src="../static/images/Fried Chicken.jpg" alt="">
+                </div>
+                <div class="food-detail">
+                  <p>Fried Chicken</p>
+                  <p>(8 pieces)</p>
+                  <p>$7.00(plus tax)</p>
+                </div>
+                <div class="select-container">
+                  <button data-name="Fried Chicken" data-details="(8 pieces)" data-price=7.00 class="select-btn" type="button">Select</button>
+                </div>
+              </div>
+              <div class="food-article">
+                <div class="food-img-banner">
+                  <img class="menu-img" src="../static/images/Nachos.jpg" alt="">
+                </div>
+                <div class="food-detail">
+                  <p>Nachos</p>
+                  <p>(Salsa and Cheese)</p>
+                  <p>$4.00(plus tax)</p>
+                </div>
+                <div class="select-container">
+                  <button data-name="Nachos" data-details="(Salsa and Cheese)" data-price=4.00 class="select-btn" type="button">Select</button>
+                </div>
+              </div>
+              <div class="food-article">
+                <div class="food-img-banner">
+                  <img class="menu-img" src="../static/images/Hamburger.jpg" alt="">
+                </div>
+                <div class="food-detail">
+                  <p>Hamburger</p>
+                  <p>$5.00(plus tax)</p>
+                </div>
+                <div class="select-container">
+                  <button data-name="Hamburger" data-details=" " data-price=5.00 class="select-btn" type="button">Select</button>
+                </div>
+              </div>
+              <div class="food-article">
+                <div class="food-img-banner">
+                  <img class="menu-img" src="../static/images/French Fries.jpg" alt="">
+                </div>
+                <div class="food-detail">
+                  <p>French Fries</p>
+                  <p>$4.00(plus tax)</p>
+                </div>
+                <div class="select-container">
+                  <button data-name="French Fries" data-details=" " data-price=4.00 class="select-btn" type="button">Select</button>
+                </div>
+              </div>
+            </div>
+            <div class="drink-title">
+              <h3>drink</h3>
+            </div>
+            <div class="drink-list">
+              <div class="drink-article">
+                <div class="drink-img-banner">
+                  <img class="menu-img" src="../static/images/Coke.jpg" alt="">
+                </div>
+                <div class="drink-detail">
+                  <p>Coke</p>
+                  <p>(500ml)</p>
+                  <p>$3.50(plus tax)</p>
+                </div>
+                <div class="select-container">
+                  <button data-name="Coke" data-details="(500ml)" data-price=3.50 class="select-btn" type="button">Select</button>
+                </div>
+              </div>
+              <div class="drink-article">
+                <div class="drink-img-banner">
+                  <img class="menu-img" src="../static/images/Sprite.jpg" alt="">
+                </div>
+                <div class="drink-detail">
+                  <p>Sprite</p>
+                  <p>(500ml)</p>
+                  <p>$3.50(plus tax)</p>
+                </div>
+                <div class="select-container">
+                  <button data-name="Sprite" data-details="(500ml)" data-price=3.50 class="select-btn" type="button">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-container">
+          <div class="cart">
+            <div class="zigzag-top">
+            </div>
+            <div class="input-coupon">
+              <p>Enter Voucher Code Here</p>
+              <input class="coupon-code" type="text" placeholder="Voucher Code" >
+              <button class="coupon-apply-btn" type="button">Apply</button>
+            </div>
+            <div class="order-details">
+              <div class="order-details-title">
+                <h3>ORDER DETAILS</h3>
+              </div>
+              <div class="order-beverages">
+
+              </div>
+              <div class="tax">
+                <div class="tax-title">
+                  <h3>TAX</h3>
+                </div>
+                <div class="tax-price">
+                  <h3 class="tax-amount"></h3>
+                </div>
+              </div>
+              <div class="total-price">
+                <div class="total-title">
+                  <h3>TOTAL</h3>
+                </div>
+                <div class="total">
+                  <h3 class="total-amount"></h3>
+                </div>
+              </div>
+              <div class="payment">
+                <a class="payment-btn"><div>GO TO PAYMENT</div></a>
+              </div>
+              <div class="order-date-time-details">
+                <div class="selected-order-date">
+                  <div class="order-date-title">
+
+                  </div>
+                  <div class="order-date-details">
+
+                  </div>
+                </div>
+                <div class="selected-order-time">
+                  <div class="order-time-title">
+
+                  </div>
+                  <div class="order-time-details">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="zigzag-bottom">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="footer">
+        <div class="footer-logo">
+          <a href="/"><img class="footer-logo-img" src="../static/images/logo.png" alt=""></a>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-content-container">
+          <div class="close-btn-container">
+            <span class="close-btn">&times;</span>
+          </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-product">
+                <h3 class="modal-product-name">
+
+                </h3>
+              </div>
+              <div class="modal-price">
+                <h3 class="modal-price-text">
+
+                </h3>
+                <p>(plus tax)</p>
+              </div>
+            </div>
+            <div class="modal-img-container">
+
+            </div>
+            <div class="modal-add-cart">
+              <div class="quantity-container">
+                <div class="minus-btn-container">
+                  <button class="minus-btn" type="button" name="button">-</button>
+                </div>
+                <div class="input-count-container">
+                  <input class="input-count" type="number" name="" value="1">
+                </div>
+                <div class="plus-btn-container">
+                  <button class="plus-btn" type="button" name="button">+</button>
+                </div>
+              </div>
+              <div class="add-cart-container">
+
+              </div>
+            </div>
+            <div class="modal-edit-cart">
+              <div class="quantity-container">
+                <div class="minus-btn-container">
+                  <button class="edit-minus-btn" type="button" name="button">-</button>
+                </div>
+                <div class="input-count-container">
+                  <input class="cart-count" type="number" name="" value="">
+                </div>
+                <div class="plus-btn-container">
+                  <button class="edit-plus-btn" type="button" name="button">+</button>
+                </div>
+              </div>
+              <div class="save-changes-container">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-cart-nav">
+        <div class="cart-nav-container">
+          <div class="place-order-container">
+            <a class="place-order-btn"><div>place order</div></a>
+          </div>
+          <div class="cart-total-container">
+            <button class="cart-total-btn" type="button" name="button">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-nav-text">total</span>
+              <span class="cart-nav-price"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="alert-modal">
+        <div class="alert-content-container">
+          <div class="alert-message">
+
+          </div>
+          <div class="alert-close-btn-container">
+            <button type="button" class="alert-close-btn">close</button>
+          </div>
+        </div>
+      </div>
+    <script src="{% static 'index.js' %}"></script>
+  </body>
+</html>

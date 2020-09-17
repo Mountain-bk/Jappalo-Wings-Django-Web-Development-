@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      {% load static%}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
+    <title>Select Order Time</title>
+    <script src="https://kit.fontawesome.com/9006e11a27.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="menu-header">
+      <div class="menu-header-container">
+        <div class="order-type-bar-order-type">
+          <a href="/select-order-type"><h3>order type</h3></a>
+        </div>
+        <div class="menu-bar-order-type">
+          <a href="/menu"><h3>menu</h3></a>
+        </div>
+        <div class="payment-bar-order-type">
+          <a class="payment-bar-btn"><h3>payment</h3></a>
+        </div>
+      </div>
+    </div>
+    <div class="select-order-type-title-container">
+      <div class="select-order-type-title">
+        <h1>select order type</h1>
+      </div>
+    </div>
+    <div class="start-order-select">
+      <a href="/delivery" class="delivery-select">
+        <div class="delivery-container">
+          <div class="delivery-content">
+            <i class="fas fa-motorcycle"></i>
+            <br>
+            <span>DELIVERY</span>
+          </div>
+        </div>
+      </a>
+      <div class="or">OR</div>
+      <a href="/pick-up" class="pick-up-select">
+        <div class="pick-up-container">
+          <div class="pick-up-content">
+            <i class="fas fa-store-alt"></i>
+            <br>
+            <span>PICK UP</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="current-order-type">
+      <div class="order-type-content-container">
+        <div class="current-order-type-title">
+          <h2>current order type</h2>
+        </div>
+        <div class="order-date-time-details">
+          <div class="selected-order-date">
+            <div class="order-date-title">
+              <h3>order date</h3>
+            </div>
+            <div class="order-date-details">
+
+            </div>
+          </div>
+          <div class="selected-order-time">
+            <div class="order-time-title">
+              <h3>order time</h3>
+            </div>
+            <div class="order-time-details">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alert-modal">
+      <div class="alert-content-container">
+        <div class="alert-message">
+
+        </div>
+        <div class="alert-close-btn-container">
+          <button type="button" class="alert-close-btn">close</button>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'index.js' %}"></script>
+  </body>
+</html>

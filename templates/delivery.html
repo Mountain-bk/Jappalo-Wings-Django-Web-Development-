@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
+    <title>Delivery Order Time</title>
+    <script src="https://kit.fontawesome.com/9006e11a27.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="delivery-title-container">
+      <div class="delivery-title">
+        <h1>delivery order time</h1>
+      </div>
+    </div>
+    <div class="order-form-container">
+      <div class="order-form">
+        <div class="delivery-time">
+          <div class="time-heading"><p>Estimated time required</p></div>
+          <div class="time-value"><p>In 30 minutes</p></div>
+        </div>
+        <div class="order-intro">
+          <div class="order-question"><h2>When would you like your order</h2></div>
+          <div class="intro">
+            <div class="asap">
+              <a class="a-asap" href="/menu"><h3>ASAP</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="order-or">OR</div>
+        <div class="order-date-time">
+          <div class="input-order-date">
+            <div class="date-title">
+              <label for="date">order date</label>
+            </div>
+            <div class="order-date">
+              <select id="date" class="date-selector">
+
+              </select>
+              <div class="validation-container">
+                <img class="date-mark" src="../static/images/check.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="input-order-time">
+            <div class="time-title">
+              <label for="time">order time</label>
+            </div>
+            <div class="order-time">
+              <select id="time" class="time-selector">
+                <option value="">ASAP</option>
+              </select>
+              <div class="validation-container">
+                <img class="time-mark" src="../static/images/check.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back-next-row">
+          <a href="javascript:history.back()"><div class="back">BACK</div></a>
+          <a class="next"><div>NEXT</div></a>
+        </div>
+      </div>
+    </div>
+    <div class="alert-modal">
+      <div class="alert-content-container">
+        <div class="alert-message">
+
+        </div>
+        <div class="alert-close-btn-container">
+          <button type="button" class="alert-close-btn">close</button>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'index.js' %}"></script>
+  </body>
+</html>

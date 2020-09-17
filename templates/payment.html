@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% load static%}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
+    <title>Payment</title>
+    <script src="https://kit.fontawesome.com/9006e11a27.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="payment-header">
+      <div class="payment-header-container">
+        <div class="menu-bar-payment">
+          <a href="/menu"><h3>menu</h3></a>
+        </div>
+        <div class="payment-bar-payment">
+          <a href="/payment"><h3>payment</h3></a>
+        </div>
+        <div class="cart-bar-payment">
+          <button class="payment-cart-btn" type="button" name="button">order details</button>
+        </div>
+      </div>
+    </div>
+    <div class="payment-body">
+      <div class="payment-form-wrapper">
+        <form class="payment-form" action="order">
+          <div class="input-container">
+            <label for="customer-name">Name</label>
+            <div class="validation-field">
+              <input id="customer-name" type="text" placeholder="First and Last" value="">
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="customer-phone">Phone</label>
+            <div class="validation-field">
+              <input id="customer-phone" type="text" placeholder="012-345-6789" value="">
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="customer-email">Email</label>
+            <div class="validation-field">
+              <input id="customer-email" type="email" placeholder="jappalowings@gmail.com" value="">
+            </div>
+          </div>
+          <!--<div class="input-container">
+            <div class="receipt">
+              Receipt
+            </div>
+            <div class="receipt-row">
+              <input id="receipt-required"type="checkbox" name="" value="">
+              <label for="receipt-required">Please check this checkbox if you require a receipt</label>
+            </div>
+          </div>-->
+          <div class="confirm-payment-container">
+            <div class="confirm-payment">
+              <button type="submit" class="confirm-payment-btn" name="button">Confirm Payment</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="payment-cart-container">
+        <div class="cart">
+          <div class="zigzag-top">
+          </div>
+          <div class="input-coupon">
+            <p>Enter Voucher Code Here</p>
+            <input class="coupon-code" type="text" placeholder="Voucher Code" >
+            <button class="coupon-apply-btn" type="button">Apply</button>
+          </div>
+          <div class="order-details">
+            <div class="order-details-title">
+              <h3>ORDER DETAILS</h3>
+            </div>
+            <div class="order-beverages">
+
+            </div>
+            <div class="tax">
+              <div class="tax-title">
+                <h3>TAX</h3>
+              </div>
+              <div class="tax-price">
+                <h3 class="tax-amount"></h3>
+              </div>
+            </div>
+            <div class="total-price">
+              <div class="total-title">
+                <h3>TOTAL</h3>
+              </div>
+              <div class="total">
+                <h3 class="total-amount"></h3>
+              </div>
+            </div>
+            <div class="order-date-time-details">
+              <div class="selected-order-date">
+                <div class="order-date-title">
+
+                </div>
+                <div class="order-date-details">
+
+                </div>
+              </div>
+              <div class="selected-order-time">
+                <div class="order-time-title">
+
+                </div>
+                <div class="order-time-details">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="zigzag-bottom">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-content-container">
+        <div class="close-btn-container">
+          <span class="close-btn">&times;</span>
+        </div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-product">
+              <h3 class="modal-product-name">
+
+              </h3>
+            </div>
+            <div class="modal-price">
+              <h3 class="modal-price-text">
+
+              </h3>
+              <p>(plus tax)</p>
+            </div>
+          </div>
+          <div class="modal-img-container">
+
+          </div>
+          <div class="modal-add-cart">
+            <div class="quantity-container">
+              <div class="minus-btn-container">
+                <button class="minus-btn" type="button" name="button">-</button>
+              </div>
+              <div class="input-count-container">
+                <input class="input-count" type="number" name="" value="1">
+              </div>
+              <div class="plus-btn-container">
+                <button class="plus-btn" type="button" name="button">+</button>
+              </div>
+            </div>
+            <div class="add-cart-container">
+
+            </div>
+          </div>
+          <div class="modal-edit-cart">
+            <div class="quantity-container">
+              <div class="minus-btn-container">
+                <button class="edit-minus-btn" type="button" name="button">-</button>
+              </div>
+              <div class="input-count-container">
+                <input class="cart-count" type="number" name="" value="">
+              </div>
+              <div class="plus-btn-container">
+                <button class="edit-plus-btn" type="button" name="button">+</button>
+              </div>
+            </div>
+            <div class="save-changes-container">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="payment-mobile-cart-nav">
+      <div class="cart-nav-container">
+        <div class="cart-total-container">
+          <button class="payment-cart-total-btn" type="button" name="button">
+            <p>close cart</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="alert-modal">
+      <div class="alert-content-container">
+        <div class="alert-message">
+
+        </div>
+        <div class="alert-close-btn-container">
+          <button type="button" class="alert-close-btn">close</button>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'index.js' %}"></script>
+  </body>
+</html>
