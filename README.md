@@ -28,4 +28,3 @@ Check if the server is activating
 python manage.py startapp app_name
 ```
 
-[Check Out my web site](http://127.0.0.1:8000/)
